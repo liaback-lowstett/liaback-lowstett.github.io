@@ -1,0 +1,817 @@
+body {
+  margin: 0;
+  font-family: futura;
+}
+h1 {
+  font-size: 28 px;
+  color: #black;
+  line-height: 50px;
+  font-weight: normal;
+}
+h2 {
+  font-size: 20px;
+  color: #black;
+  font-weight: bold;
+}
+h3 {
+  font-size: 12px;
+  color: #black;
+  font-weight: bold;
+}
+p {
+  font-size: 12px;
+  color: black;
+}
+a {
+  font-size: 18px;
+  color: black;
+  text-decoration: none;
+}
+ul {
+  margin: 0;
+}
+li {
+  font-size: 12px;
+  color: gray;
+  line-height: 20px;
+  padding: 0;
+}
+figure {
+  margin: 0;
+}
+/*Navigation bar is positioned fixed, which means it always stays
+in the same place even if the page is scrolled. z-index puts the
+navigation "layer" in front of other elements*/
+
+.topnav {
+  position: fixed;
+  top: 0;
+  height: 6vh;
+  width: 100vw;
+  padding: 4vh 0vw 0vh 0vw;
+  z-index: 1;
+}
+.topnav a {
+  padding: 0vh 4vw 0vh 0vw;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 4vh;
+  text-decoration: none;
+  float: right ;
+}
+.nav-logo {
+  position: absolute;
+  left: 6%;
+  transform: translateX(-50%);
+  font-weight: bold;
+}
+#nav-about {
+  color: #5499C7;
+}
+.nav-portfolio{
+  color:#5499C7;
+}
+.topnav a:hover, .nav-logo:hover {
+  color: #5499C7;
+}
+/*First part - introduction about me*/
+#main-wrapper {
+  height: 250vh;
+  width: 100vw;
+  background-color: white;
+}
+#main-top-wrapper {
+  /*The display property specifies the display behavior
+  (the type of rendering box) of an element*/
+  display: table;
+  height: 100vh;
+  width: 100vw;
+  text-align: left;
+}
+#main-top-wrapper-text{
+  /*The position property specifies the type of positioning
+  method used for an element. Elements are then positioned
+  using the top, bottom, left, and right properties.
+  An element with position: absolute; is positioned relative
+  to the nearest positioned ancestor. However; if an absolute
+  positioned element has no positioned ancestors, it uses the d
+  ocument body, and moves along with page scrolling.*/
+  position: absolute;
+  width: 65vw;
+  top: 50vh;
+  left: 50vw;
+  transform: translate(-50%, -50%);
+}
+#main-top-wrapper-subtext {
+  position: absolute;
+  width: 65vw;
+  top: 75vh;
+  left: 50vw;
+  /*moves an element from its current position
+  (according to the parameters given for the X- & Y-axis).*/
+  transform: translate(-50%, -50%);
+}
+/* Second part - My work */
+#my-work-grid-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 0;
+  padding: 0;
+  grid-auto-rows: 50vh;
+}
+#my-work{
+  position: relative;
+  background-color: white;
+}
+
+#my-work-text h1{
+  position: absolute;
+  top: 25%;
+  left: 25vw;
+  transform: translate(-50%, -50%);
+  padding: 1vh 3vw;
+  width: 25vw;
+  color: black;
+}
+#my-work-text p{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 5vh 3vw;
+  width: 50%;
+  line-height: 25px;
+  color:black;
+}
+/*Får inte hover att funkar - tappat en övergripande div?*/
+#library-main-image{
+  background-position: center;
+  background-size: cover;
+  background-image: url("../bilder/booking_main.jpg");
+}
+#hantverkaren-main-image{
+  background-position: center;
+  background-size: cover;
+  background-image: url("../bilder/hantverkaren_main.jpg");
+}
+#macro-main-image{
+  background-position: center;
+  background-size: cover;
+  background-image: url("../bilder/macro_main.jpg");
+}
+#circus-main-image{
+  background-position: center;
+  background-size: cover;
+  background-image: url("../bilder/circus_cover.jpg");
+}
+#first-descent-main-image{
+  background-position: center;
+  background-size: cover;
+  background-image: url("../bilder/first-descent-cover.jpg");
+}
+#pepp-main-image{
+  background-position: center;
+  background-size: cover;
+  background-image: url("../bilder/pepp_spotify_2.jpg");
+}
+#temporary-main-image{
+  background-position: center;
+  background-size: cover;
+  background-image: url("../bilder/temporary_1.jpg");
+}
+.overlay{
+ position: relative;
+ height: 100%;
+ width: 100%;
+ opacity: 0;
+ transition: .5s ease;
+ background-color: black;
+}
+.text-overlay{
+ position: absolute;
+ top: 50%;
+ left: 50%;
+ transform: translate(-50%, -50%);
+ color: white;
+ font-size: 20px;
+ text-align: center;
+}
+.text-overlay p{
+  color: white;
+}
+#library-main-image:hover .overlay {
+  opacity: 0.7;
+}
+#hantverkaren-main-image:hover .overlay {
+  opacity: 0.7;
+  }
+#macro-main-image:hover .overlay {
+    opacity: 0.7;
+}
+#circus-main-image:hover .overlay{
+  opacity: 0.7;
+}
+#first-descent-main-image:hover .overlay{
+  opacity: 0.7;
+}
+#pepp-main-image:hover .overlay{
+  opacity: 0.7;
+}
+#temporary-main-image:hover .overlay{
+  opacity: 0.7;
+}
+
+/*Third part - which just say "lets work togethet"*/
+#bottom-wrapper{
+  display: table;
+  width: 100%;
+  height: 45vh;
+  text-align: center;
+}
+#bottom-wrapper-text{
+  position: absolute;
+  text-align: center;
+  left: 50%;
+  padding: 20vh 0vw;
+  transform: translate(-50%, -0%);
+}
+#about-wrapper {
+  height: 450vh;
+  width: 100%;
+  /** margin-top: 10vh; **/
+  background-color: #ffffff;
+}
+ #about-top-wrapper-grid{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 0vw;
+  padding: 0vw;
+  margin-top: 12vh;
+  grid-auto-rows: 88vh;
+  background-color:#154360;
+}
+.about-top-wrapper-content{
+  background-size: cover;
+  position: relative;
+}
+#left-text {
+  position: absolute;
+  width: 65%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 7vh 0vw;
+}
+#left-text h1{
+  font-size: 45px;
+  color: white;
+  line-height: 60px;
+}
+#right-image{
+  background-position: center;
+  background-image: url("../bilder/about_felicia.jpg");
+}
+#about-middle-wrapper {
+  position: relative;
+  display: table;
+  height: 100vh;
+  width: 100%;
+  text-align: left;
+}
+#about-middle-wrapper-text{
+  position: absolute;
+  width: 65%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 7vh 0vw;
+}
+#about-middle-wrapper-text p {
+  font-size: 16px;
+  line-height: 25px;
+}
+#about-image-grid{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4, 16vw);
+  grid-gap: 0;
+}
+.image{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.gallery_item_1{
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 1;
+  grid-row-end: 3;
+}
+.gallery_item_2{
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 2;
+}
+.gallery_item_3{
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 2;
+  grid-row-end: 3;
+}
+.gallery_item_4{
+  grid-column-start: 3;
+  grid-column-end: 5;
+  grid-row-start: 1;
+  grid-row-end: 3;
+}
+.gallery_item_5{
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 3;
+  grid-row-end: 5;
+}
+.gallery_item_6{
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 3;
+  grid-row-end: 5;
+}
+.gallery_item_7{
+  grid-column-start: 3;
+  grid-column-end: 5;
+  grid-row-start: 3;
+  grid-row-end: 4;
+}
+.gallery_item_8{
+  grid-column-start: 3;
+  grid-column-end: 4;
+  grid-row-start: 4;
+  grid-row-end: 5;
+}
+.gallery_item_9{
+  grid-column-start: 4;
+  grid-column-end: 5;
+  grid-row-start: 4;
+  grid-row-end: 5;
+}
+#about-resume-wrapper{
+  position: relative;
+  display: table;
+  height: 100vh;
+  width: 100%;
+  text-align: left;
+}
+#about-resume-wrapper-text{
+  position: absolute;
+  width: 65%;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+/*portfolio*/
+#portfolio-grid-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 0;
+  padding: 0;
+  margin-top: 12vh;
+  grid-auto-rows: 44vh;
+}
+/*a general wrapper for the project pages*/
+.project-wrapper{
+  height: 200vh;
+  width: 100%;
+  background-color: white;
+  margin-top: 15vh;
+}
+/*booking have more images and need more space 400vh*/
+#project-booking-wrapper{
+  height: 300vh;
+  width: 100%;
+  background-color: white;
+  margin-top: 10vh;
+}
+.project-wrapper-grid{
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-gap: 5vw;
+  padding: 0vh 10vw;
+  margin-top: 12vh
+  grid-auto-rows: 100vh;
+  background-color:white;
+}
+.project-wrapper-content{
+  position: relative;
+}
+/*has been changed to right*/
+.project-left{
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 3vw;
+  /** padding: 50px;**/
+  grid-auto-rows: 50vh;
+  margin-top: 10vh;
+}
+.project-item{
+  background-size: contain;
+  position: relative;
+  background-repeat: no-repeat;
+}
+#hantverkaren-image_1{
+  background-position: left;
+  background-image: url(../bilder/hantverkaren_1.png);
+}
+#hantverkaren-image_2{
+  background-size: cover;
+  background-position: left;
+  background-image: url(../bilder/hantverkaren_flowchart_2.jpg);
+}
+#hantverkaren-image_3{
+  background-size: cover;
+  background-position: left;
+  background-image: url(../bilder/hantverkaren_wireframe_3.jpg);
+}
+#booking-image_1{
+  background-position: center;
+  background-image: url(../bilder/start.png);
+}
+#booking-image_2{
+  background-position: center;
+  background-image: url(../bilder/log_in.png);
+}
+#booking-image_3{
+  background-position: center;
+  background-image: url(../bilder/start_log_in.png);
+}
+#booking-image_4{
+  background-position: center;
+  background-image: url(../bilder/book_a_room.png);
+}
+#booking-image_5{
+  background-position: center;
+  background-image: url(../bilder/confirmation.png);
+}
+#macro-image_1{
+  background-position: center;
+  background-image: url(../bilder/macro_hemsida.png);
+}
+#macro-image_2{
+  background-position: center;
+  background-image: url(../bilder/macro_flyer_ig_background_1.jpg);
+}
+#macro-image_3{
+  background-position: center;
+  background-image: url(../bilder/style_guide_macro.png);
+}
+.project-right{
+}
+.project-right h1{
+  margin: 0;
+  padding-bottom: 3vh;
+}
+.project-right h2{
+  margin: 0;
+  padding-top: 2vh;
+}
+.project-right p{
+  line-height: 20px;
+}
+.container-project-list{
+  -webkit-column-count: 2; /* Chrome, Safari, Opera */
+  -moz-column-count: 2; /* Firefox */
+  column-count: 2;
+  width: fit-content;
+  padding-top: 1vh;
+}
+.project-list {
+  list-style-type: none;
+  padding: 0;
+}
+.footer{
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 0vw;
+  padding: 2vh 8vw;
+  grid-auto-rows: 8vh;
+  background-color: white;
+  text-align: center;
+}
+.footer a{
+  font-size: 10px;
+  padding: 0vh 3vw 0vh 0vw
+}
+.footer a:hover{
+  color: #5499C7;
+}
+
+/* On screens that are 600px or less*/
+@media screen and (max-width: 600px) {
+  h1 {
+    font-size: 20px;
+    line-height: 35px;
+  }
+  h2 {
+    font-size: 15px;
+    color: #black;
+    font-weight: bold;
+  }
+  a{
+    font-size: 15px;
+  }
+  /*since there is no hover on small screens*/
+  .overlay {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    opacity: 1;
+    transition: .5s ease;
+    background-color:rgba(0, 0, 0, 0.3);
+}
+  /*navigation*/
+  .topnav {
+    position: absolute;
+    width: 80vw;
+    top: 5vh;
+    left: 50vw;
+    transform: translate(-50%, -50%);
+  }
+  .nav-logo .topnav a {
+    text-decoration: none;
+  }
+  /*main page*/
+  #main-top-wrapper-text{
+    position: absolute;
+    width: 80vw;
+    top: 50vh;
+    left: 50vw;
+    transform: translate(-50%, -50%);
+}
+  #main-top-wrapper-subtext {
+    position: absolute;
+    width: 80vw;
+    top: 75vh;
+    left: 50vw;
+    transform: translate(-50%, -50%);
+}
+    #my-work-grid-wrapper {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-gap: 1vw;
+      padding-left: 1vw;
+      padding-right: 1vw;
+      padding-top: 12vh;
+      grid-auto-rows: 25vh;
+    }
+    #my-work{
+      position: relative;
+      background-color: white;
+    }
+    #my-work-text h1{
+      position: absolute;
+      top: 5vh;
+      left: 50vw;
+      transform: translate(-50%, -50%);
+      padding: 1vh 3vw;
+      width: 80vw;
+      color: black
+    }
+    #my-work-text p{
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      padding: 5vh 3vw;
+      width: 80vw;
+      line-height: 20px;
+      color:black
+    }
+    /*about page*/
+    #about-wrapper {
+      height: 400vh;
+      width: 100%;
+      /** margin-top: 10vh; **/
+      background-color: #ffffff;
+    }
+    #about-top-wrapper-grid{
+     display: grid;
+     grid-template-columns: 1fr;
+     grid-gap: 0vw;
+     padding: 0vw;
+     margin-top: 12vh;
+     grid-auto-rows: 44vh;
+     background-color:#154360;
+   }
+   /*project pages*/
+   #left-text {
+     position: absolute;
+     width: 80%;
+     top: 55%;
+     left: 50%;
+     transform: translate(-50%, -50%);
+   }
+   #left-text h1{
+     font-size: 30px;
+     color: white;
+     line-height: 40px;
+   }
+   /*about page*/
+   #about-middle-wrapper {
+     position: relative;
+     display: table;
+     height: 100vh;
+     width: 100%;
+     text-align: left;
+   }
+   #about-middle-wrapper-text{
+     position: absolute;
+     width: 80%;
+     top: 50%;
+     left: 50%;
+     transform: translate(-50%, -50%);
+   }
+   #about-middle-wrapper-text p {
+     font-size: 12px;
+     line-height: 22px;
+   }
+   #about-image-grid{
+     display: grid;
+     grid-template-columns: repeat(4, 1fr);
+     grid-template-rows: repeat(4, 25vw);
+     grid-gap: 0;
+   }
+   #about-resume-wrapper-text{
+     position: absolute;
+     width: 80%;
+     top: 70%;
+     left: 50%;
+     transform: translate(-50%, -50%);
+     padding: 7vh 0vw;
+   }
+   /*portfolio page*/
+   #portfolio-grid-wrapper {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 1vw;
+    padding: 0vh 1vw;
+    margin-top: 12vh;
+    grid-auto-rows: 25vh;
+}
+   /*project pages*/
+   .project-wrapper{
+     height: 175vh;
+     width: 100%;
+     background-color: white;
+     margin-top: 11vh;
+   }
+   .project-wrapper-grid{
+     display: grid;
+     grid-template-columns: 1fr;
+     grid-gap: 5vw;
+     padding: 9vh 9vw;
+     grid-auto-rows: 70vh;
+     background-color:white;
+   }
+   /*top*/
+   .project-left{
+     display: grid;
+     grid-template-columns: 1fr;
+     grid-gap: 3vw;
+     /** padding: 50px;**/
+     grid-auto-rows: 25vh;
+     margin-top: 0;
+   }
+   /*bottom*/
+   .project-right {
+     position: absolute;
+     width: 80vw;
+     top: 30vh;
+     left: 50%;
+     transform: translate(-50%, -50%);
+     padding: 0vh 0vw;
+   }
+   .project-item{
+     background-size: contain;
+     position: relative;
+     background-repeat: no-repeat;
+   }
+ }
+ @media screen and (min-width: 600px)and (max-width: 900px) {
+   h2 {
+     font-size: 15px;
+     color: #black;
+     font-weight: bold;
+   }
+   /*since there is no hover on small screens*/
+   .overlay {
+     position: relative;
+     height: 100%;
+     width: 100%;
+     opacity: 1;
+     transition: .5s ease;
+     background-color: rgba(0, 0, 0, 0.3);
+ }
+   .topnav {
+     position: absolute;
+     width: 80vw;
+     top: 5vh;
+     left: 50vw;
+     transform: translate(-50%, -50%);
+   }
+   .nav-logo .topnav a {
+     text-decoration: none;
+   }
+   /*Page:main*/
+   #main-wrapper {
+    height: 200vh;
+    width: 100vw;
+    background-color: white;
+}
+   #my-work-grid-wrapper {
+     display: grid;
+     grid-template-columns: 1fr 1fr;
+     grid-gap: 1vh;
+     padding: 1vh;
+     grid-auto-rows: 35vh;
+   }
+   #bottom-wrapper {
+    display: table;
+    width: 100%;
+    height: 35vh;
+    text-align: center;
+}
+   #bottom-wrapper-text {
+    position: absolute;
+    text-align: center;
+    left: 50%;
+    padding: 10vh 0vw;
+    transform: translate(-50%, -0%);
+}
+/*Page: portfoilio*/
+.project-wrapper {
+    height: 80vh;
+    width: 100%;
+    background-color: white;
+    margin-top: 10vh;
+}
+   .project-left {
+     display: grid;
+     grid-template-columns: 1fr;
+     grid-gap: 3vw;
+     grid-auto-rows: 20vh;
+     }
+    #portfolio-grid-wrapper {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-gap: 1vh;
+      padding: 1vh;
+      margin-top: 11vh;
+      grid-auto-rows: 30vh;
+}
+/*Page: about*/
+#about-wrapper {
+    height: 350vh;
+    width: 100%;
+    background-color: #ffffff;
+}
+#about-top-wrapper-grid{
+ display: grid;
+ grid-template-columns: 1fr;
+ grid-gap: 0vw;
+ padding: 0vw;
+ margin-top: 12vh;
+ grid-auto-rows: 44vh;
+ background-color:#154360;
+}
+#about-middle-wrapper {
+    position: relative;
+    display: table;
+    height: 75vh;
+    width: 100%;
+    text-align: left;
+}
+#about-image-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 20vw);
+    grid-gap: 0;
+}
+#about-resume-wrapper-text {
+    position: absolute;
+    width: 65%;
+    top: 58%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 7vh 0vw;
+}
+/*footer*/
+.footer {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 0vw;
+    padding: 2vh 8vw;
+    grid-auto-rows: 5vh;
+    background-color: white;
+    text-align: center;
+}
+   }

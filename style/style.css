@@ -369,7 +369,6 @@ navigation "layer" in front of other elements*/
 }
 /*a general wrapper for the project pages*/
 .project-wrapper{
-  height: 200vh;
   width: 100%;
   background-color: white;
   margin-top: 15vh;
@@ -639,7 +638,6 @@ navigation "layer" in front of other elements*/
 }
    /*project pages*/
    .project-wrapper{
-     height: 175vh;
      width: 100%;
      background-color: white;
      margin-top: 11vh;
@@ -648,7 +646,7 @@ navigation "layer" in front of other elements*/
      display: grid;
      grid-template-columns: 1fr;
      grid-gap: 5vw;
-     padding: 9vh 9vw;
+     padding: 5vh 5vw;
      background-color:white;
    }
    .project-left{
@@ -720,7 +718,6 @@ navigation "layer" in front of other elements*/
 }
 /*Page: portfoilio*/
 .project-wrapper {
-    height: 80vh;
     width: 100%;
     background-color: white;
     margin-top: 10vh;

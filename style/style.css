@@ -123,23 +123,19 @@ navigation "layer" in front of other elements*/
   position: relative;
   background-color: white;
 }
-
-#my-work-text h1{
-  position: absolute;
-  top: 25%;
-  left: 25vw;
-  transform: translate(-50%, -50%);
-  padding: 1vh 3vw;
-  width: 25vw;
-  color: black;
-}
-#my-work-text p{
+#my-work-text{
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
-  padding: 5vh 3vw;
-  width: 50%;
+  transform: translate(-50%,-50%);
+}
+
+#my-work-text h1{
+  width: 85%;
+  color: black;
+}
+#my-work-text p{
+  width: 85%;
   line-height: 25px;
   color:black;
 }
@@ -236,9 +232,7 @@ navigation "layer" in front of other elements*/
   transform: translate(-50%, -0%);
 }
 #about-wrapper {
-  height: 450vh;
   width: 100%;
-  /** margin-top: 10vh; **/
   background-color: #ffffff;
 }
  #about-top-wrapper-grid{
@@ -274,17 +268,14 @@ navigation "layer" in front of other elements*/
 #about-middle-wrapper {
   position: relative;
   display: table;
-  height: 100vh;
   width: 100%;
   text-align: left;
 }
 #about-middle-wrapper-text{
-  position: absolute;
   width: 65%;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  padding: 7vh 0vw;
+  margin: auto;
+  margin-top: 20vh;
+  margin-bottom: 20vh;
 }
 #about-middle-wrapper-text p {
   font-size: 16px;
@@ -363,11 +354,10 @@ navigation "layer" in front of other elements*/
   text-align: left;
 }
 #about-resume-wrapper-text{
-  position: absolute;
   width: 65%;
-  top: 80%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  margin: auto;
+  margin-top: 10vh;
+  margin-bottom: 10vh;
 }
 /*portfolio*/
 #portfolio-grid-wrapper {
@@ -567,28 +557,24 @@ navigation "layer" in front of other elements*/
       position: relative;
       background-color: white;
     }
-    #my-work-text h1{
+    #my-work-text{
       position: absolute;
-      top: 5vh;
-      left: 50vw;
-      transform: translate(-50%, -50%);
-      padding: 1vh 3vw;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%,-50%);
+      }
+
+    #my-work-text h1{
       width: 80vw;
       color: black
     }
     #my-work-text p{
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      padding: 5vh 3vw;
       width: 80vw;
       line-height: 20px;
       color:black
     }
     /*about page*/
     #about-wrapper {
-      height: 400vh;
       width: 100%;
       /** margin-top: 10vh; **/
       background-color: #ffffff;
@@ -641,12 +627,8 @@ navigation "layer" in front of other elements*/
      grid-gap: 0;
    }
    #about-resume-wrapper-text{
-     position: absolute;
      width: 80%;
-     top: 70%;
-     left: 50%;
-     transform: translate(-50%, -50%);
-     padding: 7vh 0vw;
+     margin: auto;
    }
    /*portfolio page*/
    #portfolio-grid-wrapper {
@@ -763,14 +745,13 @@ navigation "layer" in front of other elements*/
     #portfolio-grid-wrapper {
       display: grid;
       grid-template-columns: 1fr 1fr;
-      grid-gap: 1vh;
-      padding: 1vh;
+      grid-gap: 0;
+      padding: 0;
       margin-top: 11vh;
       grid-auto-rows: 30vh;
 }
 /*Page: about*/
 #about-wrapper {
-    height: 350vh;
     width: 100%;
     background-color: #ffffff;
 }
@@ -797,12 +778,8 @@ navigation "layer" in front of other elements*/
     grid-gap: 0;
 }
 #about-resume-wrapper-text {
-    position: absolute;
     width: 65%;
-    top: 58%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    padding: 7vh 0vw;
+    margin: auto;
 }
 /*footer*/
 .footer {

@@ -349,7 +349,6 @@ navigation "layer" in front of other elements*/
 #about-resume-wrapper{
   position: relative;
   display: table;
-  height: 100vh;
   width: 100%;
   text-align: left;
 }
@@ -387,8 +386,7 @@ navigation "layer" in front of other elements*/
   grid-template-columns: 1fr 2fr;
   grid-gap: 5vw;
   padding: 0vh 10vw;
-  margin-top: 12vh
-  grid-auto-rows: 100vh;
+  margin-top: 12vh;
   background-color:white;
 }
 .project-wrapper-content{
@@ -605,16 +603,14 @@ navigation "layer" in front of other elements*/
    #about-middle-wrapper {
      position: relative;
      display: table;
-     height: 100vh;
      width: 100%;
      text-align: left;
    }
    #about-middle-wrapper-text{
-     position: absolute;
      width: 80%;
-     top: 50%;
-     left: 50%;
-     transform: translate(-50%, -50%);
+     margin: auto;
+     margin-top: 5vh;
+     margin-bottom: 5vh;
    }
    #about-middle-wrapper-text p {
      font-size: 12px;
@@ -629,6 +625,8 @@ navigation "layer" in front of other elements*/
    #about-resume-wrapper-text{
      width: 80%;
      margin: auto;
+     margin-top: 5vh;
+     margin-bottom: 5vh;
    }
    /*portfolio page*/
    #portfolio-grid-wrapper {
@@ -651,26 +649,17 @@ navigation "layer" in front of other elements*/
      grid-template-columns: 1fr;
      grid-gap: 5vw;
      padding: 9vh 9vw;
-     grid-auto-rows: 70vh;
      background-color:white;
    }
-   /*top*/
    .project-left{
      display: grid;
      grid-template-columns: 1fr;
      grid-gap: 3vw;
-     /** padding: 50px;**/
      grid-auto-rows: 25vh;
      margin-top: 0;
    }
-   /*bottom*/
    .project-right {
-     position: absolute;
      width: 80vw;
-     top: 30vh;
-     left: 50%;
-     transform: translate(-50%, -50%);
-     padding: 0vh 0vw;
    }
    .project-item{
      background-size: contain;
@@ -767,7 +756,6 @@ navigation "layer" in front of other elements*/
 #about-middle-wrapper {
     position: relative;
     display: table;
-    height: 75vh;
     width: 100%;
     text-align: left;
 }

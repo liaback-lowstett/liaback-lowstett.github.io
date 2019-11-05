@@ -396,7 +396,6 @@ navigation "layer" in front of other elements*/
   grid-template-columns: 1fr;
   grid-gap: 3vw;
   grid-auto-rows: 50vh;
-  margin-top: 10vh;
 }
 .project-item{
   background-size: contain;

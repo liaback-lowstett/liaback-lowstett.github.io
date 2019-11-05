@@ -375,7 +375,6 @@ navigation "layer" in front of other elements*/
 }
 /*booking have more images and need more space 400vh*/
 #project-booking-wrapper{
-  height: 300vh;
   width: 100%;
   background-color: white;
   margin-top: 10vh;
@@ -396,7 +395,6 @@ navigation "layer" in front of other elements*/
   display: grid;
   grid-template-columns: 1fr;
   grid-gap: 3vw;
-  /** padding: 50px;**/
   grid-auto-rows: 50vh;
   margin-top: 10vh;
 }
@@ -420,35 +418,35 @@ navigation "layer" in front of other elements*/
   background-image: url(../bilder/hantverkaren_wireframe_3.jpg);
 }
 #booking-image_1{
-  background-position: center;
+  background-position: left;
   background-image: url(../bilder/start.png);
 }
 #booking-image_2{
-  background-position: center;
+  background-position: left;
   background-image: url(../bilder/log_in.png);
 }
 #booking-image_3{
-  background-position: center;
+  background-position: left;
   background-image: url(../bilder/start_log_in.png);
 }
 #booking-image_4{
-  background-position: center;
+  background-position: left;
   background-image: url(../bilder/book_a_room.png);
 }
 #booking-image_5{
-  background-position: center;
+  background-position: left;
   background-image: url(../bilder/confirmation.png);
 }
 #macro-image_1{
-  background-position: center;
+  background-position: left;
   background-image: url(../bilder/macro_hemsida.png);
 }
 #macro-image_2{
-  background-position: center;
+  background-position: left;
   background-image: url(../bilder/macro_flyer_ig_background_1.jpg);
 }
 #macro-image_3{
-  background-position: center;
+  background-position: left;
   background-image: url(../bilder/style_guide_macro.png);
 }
 .project-right{
@@ -690,56 +688,85 @@ navigation "layer" in front of other elements*/
    .nav-logo .topnav a {
      text-decoration: none;
    }
-   /*Page:main*/
+   /*Page: main*/
    #main-wrapper {
     height: 200vh;
     width: 100vw;
     background-color: white;
 }
-   #my-work-grid-wrapper {
-     display: grid;
-     grid-template-columns: 1fr 1fr;
-     grid-gap: 1vh;
-     padding: 1vh;
-     grid-auto-rows: 35vh;
+#my-work-grid-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 1vh;
+  padding: 1vh;
+  grid-auto-rows: 35vh;
    }
-   #bottom-wrapper {
-    display: table;
-    width: 100%;
-    height: 35vh;
-    text-align: center;
+#my-work-text{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  width: 70%;
+   }
+#my-work-text h1{
+  width: 100%;
+  color: black;
+  }
+#my-work-text p{
+  width: 100%;
+  line-height: 22px;
+  color:black;
+  }
+#bottom-wrapper {
+  display: table;
+  width: 100%;
+  height: 35vh;
+  text-align: center;
 }
-   #bottom-wrapper-text {
-    position: absolute;
-    text-align: center;
-    left: 50%;
-    padding: 10vh 0vw;
-    transform: translate(-50%, -0%);
+#bottom-wrapper-text {
+  position: absolute;
+  text-align: center;
+  left: 50%;
+  padding: 10vh 0vw;
+  transform: translate(-50%, -0%);
 }
 /*Page: portfoilio*/
 .project-wrapper {
-    width: 100%;
+  width: 100%;
+  background-color: white;
+  margin-top: 10vh;
+}
+#portfolio-grid-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 1vh;
+  padding: 1vh;
+  margin-top: 11vh;
+  grid-auto-rows: 30vh;
+}
+.project-wrapper-grid {
+    display: grid;
+    grid-template-columns: 1fr;
     background-color: white;
+}
+.project-right {
+    width: 100%;
+    margin: auto;
     margin-top: 10vh;
+    margin-bottom: 0vh;
 }
-   .project-left {
-     display: grid;
-     grid-template-columns: 1fr;
-     grid-gap: 3vw;
-     grid-auto-rows: 20vh;
-     }
-    #portfolio-grid-wrapper {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      grid-gap: 0;
-      padding: 0;
-      margin-top: 11vh;
-      grid-auto-rows: 30vh;
-}
+.project-left {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 3vw;
+  grid-auto-rows: 38vh;
+  margin: 0;
+  }
+
 /*Page: about*/
 #about-wrapper {
-    width: 100%;
-    background-color: #ffffff;
+  width: 100%;
+  background-color: #ffffff;
 }
 #about-top-wrapper-grid{
  display: grid;
@@ -756,6 +783,12 @@ navigation "layer" in front of other elements*/
     width: 100%;
     text-align: left;
 }
+#about-middle-wrapper-text {
+    width: 65%;
+    margin: auto;
+    margin-top: 10vh;
+    margin-bottom: 10vh;
+}
 #about-image-grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -765,6 +798,8 @@ navigation "layer" in front of other elements*/
 #about-resume-wrapper-text {
     width: 65%;
     margin: auto;
+    margin-top: 10vh;
+    margin-bottom: 10vh;
 }
 /*footer*/
 .footer {

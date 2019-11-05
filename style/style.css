@@ -39,6 +39,10 @@ li {
 figure {
   margin: 0;
 }
+img {
+  width: 100%;
+  padding-bottom: 3vh;
+}
 /*Navigation bar is positioned fixed, which means it always stays
 in the same place even if the page is scrolled. z-index puts the
 navigation "layer" in front of other elements*/
@@ -57,7 +61,7 @@ navigation "layer" in front of other elements*/
   vertical-align: middle;
   line-height: 4vh;
   text-decoration: none;
-  float: right ;
+  float: right;
 }
 .nav-logo {
   position: absolute;
@@ -278,7 +282,7 @@ navigation "layer" in front of other elements*/
   margin-bottom: 20vh;
 }
 #about-middle-wrapper-text p {
-  font-size: 16px;
+  font-size: 13px;
   line-height: 25px;
 }
 #about-image-grid{
@@ -384,7 +388,7 @@ navigation "layer" in front of other elements*/
   grid-template-columns: 1fr 2fr;
   grid-gap: 5vw;
   padding: 0vh 10vw;
-  margin-top: 12vh;
+  margin-top: 20vh;
   background-color:white;
 }
 .project-wrapper-content{
@@ -392,7 +396,6 @@ navigation "layer" in front of other elements*/
 }
 /*has been changed to right*/
 .project-left{
-  display: grid;
   grid-template-columns: 1fr;
   grid-gap: 3vw;
   grid-auto-rows: 50vh;
@@ -401,54 +404,6 @@ navigation "layer" in front of other elements*/
   background-size: contain;
   position: relative;
   background-repeat: no-repeat;
-}
-#hantverkaren-image_1{
-  background-position: left;
-  background-image: url(../bilder/hantverkaren_1.png);
-}
-#hantverkaren-image_2{
-  background-size: cover;
-  background-position: left;
-  background-image: url(../bilder/hantverkaren_flowchart_2.jpg);
-}
-#hantverkaren-image_3{
-  background-size: cover;
-  background-position: left;
-  background-image: url(../bilder/hantverkaren_wireframe_3.jpg);
-}
-#booking-image_1{
-  background-position: left;
-  background-image: url(../bilder/start.png);
-}
-#booking-image_2{
-  background-position: left;
-  background-image: url(../bilder/log_in.png);
-}
-#booking-image_3{
-  background-position: left;
-  background-image: url(../bilder/start_log_in.png);
-}
-#booking-image_4{
-  background-position: left;
-  background-image: url(../bilder/book_a_room.png);
-}
-#booking-image_5{
-  background-position: left;
-  background-image: url(../bilder/confirmation.png);
-}
-#macro-image_1{
-  background-position: left;
-  background-image: url(../bilder/macro_hemsida.png);
-}
-#macro-image_2{
-  background-position: left;
-  background-image: url(../bilder/macro_flyer_ig_background_1.jpg);
-}
-#macro-image_3{
-  background-position: left;
-  background-image: url(../bilder/style_guide_macro.png);
-}
-.project-right{
 }
 .project-right h1{
   margin: 0;
@@ -647,7 +602,6 @@ navigation "layer" in front of other elements*/
      background-color:white;
    }
    .project-left{
-     display: grid;
      grid-template-columns: 1fr;
      grid-gap: 3vw;
      grid-auto-rows: 25vh;
@@ -751,11 +705,9 @@ navigation "layer" in front of other elements*/
 .project-right {
     width: 100%;
     margin: auto;
-    margin-top: 10vh;
     margin-bottom: 0vh;
 }
 .project-left {
-  display: grid;
   grid-template-columns: 1fr;
   grid-gap: 3vw;
   grid-auto-rows: 38vh;

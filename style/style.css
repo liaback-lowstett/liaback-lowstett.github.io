@@ -657,6 +657,13 @@ navigation "layer" in front of other elements*/
      position: relative;
      background-repeat: no-repeat;
    }
+   .footer {
+    position: relative;
+    display: table;
+    padding: 10vh 17vw;
+    text-align: center;
+    margin: auto;
+}
  }
  @media screen and (min-width: 600px)and (max-width: 900px) {
    h2 {
@@ -796,12 +803,10 @@ navigation "layer" in front of other elements*/
 }
 /*footer*/
 .footer {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-gap: 0vw;
-    padding: 2vh 8vw;
-    grid-auto-rows: 5vh;
-    background-color: white;
-    text-align: center;
+   position: relative;
+   display: table;
+   padding: 10vh 10vw;
+   text-align: center;
+   margin: auto;
 }
    }

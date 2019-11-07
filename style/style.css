@@ -441,10 +441,33 @@ navigation "layer" in front of other elements*/
   list-style-type: none;
   padding: 0;
 }
+.change_project{
+  position: relative;
+  padding: 4vh 4vw;
+  margin: auto;
+}
+.change_project a:hover{
+  color: #bdbdbd;
+}
+.previous_project{
+  display: inline;
+  width: 50vw;
+  float: left;
+}
+.change_project a{
+  font-size: 10px;
+/*  background-color: #efefef;
+  border-radius: 50px;
+  padding: 1vh 2vw;*/
+}
+.next_project{
+  display: inline;
+  float: right;
+}
 .footer{
   position: relative;
   display: table;
-  padding: 5vh 8vw;
+  padding: 10vh 8vw;
   text-align: center;
   margin: auto;
 }
@@ -456,7 +479,7 @@ navigation "layer" in front of other elements*/
   display: inline;
 }
 .footer_hover a:hover{
-  color: #5499C7;
+  color: #bdbdbd;
 }
 
 /* On screens that are 600px or less*/

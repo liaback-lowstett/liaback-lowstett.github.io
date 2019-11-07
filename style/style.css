@@ -119,8 +119,8 @@ navigation "layer" in front of other elements*/
 #my-work-grid-wrapper {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-gap: 0;
-  padding: 0;
+  grid-gap: 1vh;
+  padding: 1vh;
   grid-auto-rows: 50vh;
 }
 #my-work{
@@ -375,8 +375,8 @@ navigation "layer" in front of other elements*/
 #portfolio-grid-wrapper {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-gap: 0;
-  padding: 0;
+  grid-gap: 1vh;
+  padding: 1vh;
   margin-top: 12vh;
   grid-auto-rows: 44vh;
 }
@@ -437,13 +437,12 @@ navigation "layer" in front of other elements*/
   padding: 0;
 }
 .footer{
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-gap: 0vw;
+  position: relative;
+  display: table;
   padding: 2vh 8vw;
-  grid-auto-rows: 8vh;
   background-color: white;
   text-align: center;
+  margin: auto;
 }
 .footer a{
   font-size: 10px;

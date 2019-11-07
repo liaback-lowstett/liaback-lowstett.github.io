@@ -4,27 +4,27 @@ body {
 }
 h1 {
   font-size: 28 px;
-  color: #black;
+  color: ##212121;
   line-height: 50px;
   font-weight: normal;
 }
 h2 {
   font-size: 20px;
-  color: #black;
+  color: ##212121;
   font-weight: bold;
 }
 h3 {
   font-size: 12px;
-  color: #black;
+  color: ##212121;
   font-weight: bold;
 }
 p {
   font-size: 12px;
-  color: black;
+  color: #212121;
 }
 a {
   font-size: 18px;
-  color: black;
+  color: #212121;
   text-decoration: none;
 }
 ul {
@@ -70,13 +70,13 @@ navigation "layer" in front of other elements*/
   font-weight: bold;
 }
 #nav-about {
-  color: #5a7b7b;
+  color: #bdbdbd;
 }
 .nav-portfolio{
-  color:#5a7b7b;
+  color:#bdbdbd;
 }
 .topnav a:hover, .nav-logo:hover {
-  color: #5a7b7b;
+  color: #bdbdbd;
 }
 /*First part - introduction about me*/
 #main-wrapper {
@@ -135,12 +135,12 @@ navigation "layer" in front of other elements*/
 }
 #my-work-text h2{
   width: 85%;
-  color: black;
+  color: #212121;
 }
 #my-work-text p{
   width: 85%;
   line-height: 25px;
-  color:black;
+  color:#212121;
 }
 .text-overlay h2{
   margin: 0;
@@ -207,31 +207,31 @@ navigation "layer" in front of other elements*/
   color: white;
 }
 #library-main-image:hover .overlay {
-  background-color: black;
+  background-color: #212121;
   opacity: 0.9;
 }
 #hantverkaren-main-image:hover .overlay {
-  background-color: black;
+  background-color: #212121;
   opacity: 0.9;
   }
 #macro-main-image:hover .overlay {
-  background-color: black;
+  background-color: #212121;
   opacity: 0.9;
 }
 #circus-main-image:hover .overlay{
-  background-color: black;
+  background-color: #212121;
   opacity: 0.9;
 }
 #first-descent-main-image:hover .overlay{
-  background-color: black;
+  background-color: #212121;
   opacity: 0.9;
 }
 #pepp-main-image:hover .overlay{
-  background-color: black;
+  background-color: #212121;
   opacity: 0.9;
 }
 #temporary-main-image:hover .overlay{
-  background-color: black;
+  background-color: #212121;
   opacity: 0.9;
 }
 
@@ -467,7 +467,7 @@ navigation "layer" in front of other elements*/
   }
   h2 {
     font-size: 15px;
-    color: #black;
+    color: ##212121;
     font-weight: bold;
   }
   a{
@@ -534,12 +534,12 @@ navigation "layer" in front of other elements*/
 
     #my-work-text h1{
       width: 80vw;
-      color: black
+      color: #212121
     }
     #my-work-text p{
       width: 80vw;
       line-height: 20px;
-      color:black
+      color:#212121
     }
     /*about page*/
     #about-wrapper {
@@ -638,7 +638,7 @@ navigation "layer" in front of other elements*/
  @media screen and (min-width: 600px)and (max-width: 900px) {
    h2 {
      font-size: 15px;
-     color: #black;
+     color: ##212121;
      font-weight: bold;
    }
    /*since there is no hover on small screens*/
@@ -682,12 +682,12 @@ navigation "layer" in front of other elements*/
    }
 #my-work-text h1{
   width: 100%;
-  color: black;
+  color: #212121;
   }
 #my-work-text p{
   width: 100%;
   line-height: 22px;
-  color:black;
+  color:#212121;
   }
 #bottom-wrapper {
   display: table;

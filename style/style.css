@@ -439,8 +439,7 @@ navigation "layer" in front of other elements*/
 .footer{
   position: relative;
   display: table;
-  padding: 2vh 8vw;
-  background-color: white;
+  padding: 5vh 8vw;
   text-align: center;
   margin: auto;
 }
@@ -448,7 +447,10 @@ navigation "layer" in front of other elements*/
   font-size: 10px;
   padding: 0vh 3vw 0vh 0vw
 }
-.footer a:hover{
+.footer_hover{
+    display: inline;
+}
+.footer_hover a:hover{
   color: #5499C7;
 }
 

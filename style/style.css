@@ -70,13 +70,13 @@ navigation "layer" in front of other elements*/
   font-weight: bold;
 }
 #nav-about {
-  color: #5499C7;
+  color: #5a7b7b;
 }
 .nav-portfolio{
-  color:#5499C7;
+  color:#5a7b7b;
 }
 .topnav a:hover, .nav-logo:hover {
-  color: #5499C7;
+  color: #5a7b7b;
 }
 /*First part - introduction about me*/
 #main-wrapper {
@@ -133,8 +133,7 @@ navigation "layer" in front of other elements*/
   left: 50%;
   transform: translate(-50%,-50%);
 }
-
-#my-work-text h1{
+#my-work-text h2{
   width: 85%;
   color: black;
 }
@@ -142,6 +141,12 @@ navigation "layer" in front of other elements*/
   width: 85%;
   line-height: 25px;
   color:black;
+}
+.text-overlay h2{
+  margin: 0;
+}
+.text-overlay p{
+  margin: 0;
 }
 /*Får inte hover att funkar - tappat en övergripande div?*/
 #library-main-image{
@@ -255,7 +260,7 @@ navigation "layer" in front of other elements*/
   padding: 0vw;
   margin-top: 12vh;
   grid-auto-rows: 88vh;
-  background-color:#154360;
+  background-color:#212121;
 }
 .about-top-wrapper-content{
   background-size: cover;
@@ -448,7 +453,7 @@ navigation "layer" in front of other elements*/
   padding: 0vh 3vw 0vh 0vw
 }
 .footer_hover{
-    display: inline;
+  display: inline;
 }
 .footer_hover a:hover{
   color: #5499C7;
@@ -476,6 +481,10 @@ navigation "layer" in front of other elements*/
     opacity: 1;
     transition: .5s ease;
     background-color:rgba(0, 0, 0, 0.3);
+}
+.text-overlay{
+  padding-top: 15%;
+  padding-bottom: 15%;
 }
   /*navigation*/
   .topnav {

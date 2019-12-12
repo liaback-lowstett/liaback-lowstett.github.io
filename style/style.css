@@ -155,6 +155,11 @@ navigation "layer" in front of other elements*/
   margin: 0;
 }
 /*Får inte hover att funkar - tappat en övergripande div?*/
+#tomorrow-main-image{
+  background-position: center;
+  background-size: cover;
+  background-image: url("../bilder/ull_2.jpg");
+  }
 #library-main-image{
   background-position: center;
   background-size: cover;

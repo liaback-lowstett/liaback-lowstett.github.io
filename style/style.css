@@ -160,6 +160,11 @@ navigation "layer" in front of other elements*/
   background-size: cover;
   background-image: url("../bilder/ull_2.jpg");
   }
+#sellpy-main-image {
+  background-position: center;
+  background-size: cover;
+  background-image: url("../bilder/sellpy.jpg")
+}
 #library-main-image{
   background-position: center;
   background-size: cover;
@@ -216,6 +221,14 @@ navigation "layer" in front of other elements*/
 }
 .text-overlay p{
   color: white;
+}
+#tomorrow-main-image:hover .overlay {
+  background-color: #212121;
+  opacity: 0.9;
+}
+#sellpy-main-image:hover .overlay {
+  background-color: #212121;
+  opacity: 0.9;
 }
 #library-main-image:hover .overlay {
   background-color: #212121;
@@ -394,7 +407,7 @@ navigation "layer" in front of other elements*/
   grid-gap: 1vh;
   padding: 1vh;
   margin-top: 12vh;
-  grid-auto-rows: 44vh;
+  grid-auto-rows: 50vh;
 }
 /*a general wrapper for the project pages*/
 .project-wrapper{

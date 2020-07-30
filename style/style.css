@@ -155,6 +155,12 @@ navigation "layer" in front of other elements*/
   margin: 0;
 }
 /*Får inte hover att funkar - tappat en övergripande div?*/
+
+#firstdescent2-main-image{
+  background-position: center;
+  background-size: cover;
+  background-image: url("../bilder/fd_2_cover.jpg");
+}
 #detectify-main-image{
   background-position: center;
   background-size: cover;
@@ -226,6 +232,18 @@ navigation "layer" in front of other elements*/
 }
 .text-overlay p{
   color: white;
+}
+#firstdescent2-main-image:hover .overlay {
+  background-color: #212121;
+  opacity: 0.9;
+}
+#detectify-main-image:hover .overlay {
+  background-color: #212121;
+  opacity: 0.9;
+}
+#tomorrow-main-image:hover .overlay {
+  background-color: #212121;
+  opacity: 0.9;
 }
 #tomorrow-main-image:hover .overlay {
   background-color: #212121;

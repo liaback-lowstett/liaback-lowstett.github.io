@@ -307,7 +307,7 @@ navigation "layer" in front of other elements*/
   padding: 0vw;
   margin-top: 12vh;
   grid-auto-rows: 88vh;
-  background-color:#212121;
+  background-color:#040404;
 }
 .about-top-wrapper-content{
   background-size: cover;
@@ -328,7 +328,7 @@ navigation "layer" in front of other elements*/
 }
 #right-image{
   background-position: center;
-  background-image: url("../bilder/about_felicia.jpg");
+  background-image: url("../bilder/about_felicia_3.jpg");
 }
 #about-middle-wrapper {
   position: relative;
@@ -624,7 +624,7 @@ navigation "layer" in front of other elements*/
      padding: 0vw;
      margin-top: 12vh;
      grid-auto-rows: 44vh;
-     background-color:#154360;
+     background-color:#040404;
    }
    /*project pages*/
    #left-text {
@@ -822,7 +822,7 @@ navigation "layer" in front of other elements*/
  padding: 0vw;
  margin-top: 12vh;
  grid-auto-rows: 44vh;
- background-color:#154360;
+ background-color:#040404;
 }
 #about-middle-wrapper {
     position: relative;

@@ -10,7 +10,7 @@ h1 {
 }
 h2 {
   font-size: 20px;
-  color: #212121;
+  color: #fff;
   font-weight: bold;
 }
 h3 {
@@ -21,6 +21,7 @@ h3 {
 p {
   font-size: 12px;
   color:#212121;
+  margin: 0 0 2px 0;
 }
 a {
   font-size: 18px;
@@ -49,10 +50,7 @@ img {
   width: 100%;
   padding-bottom: 3vh;
 }
-/*Navigation bar is positioned fixed, which means it always stays
-in the same place even if the page is scrolled. z-index puts the
-navigation "layer" in front of other elements*/
-
+/*Top nav*/
 .topnav {
   position: fixed;
   top: 0;
@@ -91,21 +89,12 @@ navigation "layer" in front of other elements*/
   background-color: white;
 }
 #main-top-wrapper {
-  /*The display property specifies the display behavior
-  (the type of rendering box) of an element*/
   display: table;
   height: 100vh;
   width: 100vw;
   text-align: left;
 }
 #main-top-wrapper-text{
-  /*The position property specifies the type of positioning
-  method used for an element. Elements are then positioned
-  using the top, bottom, left, and right properties.
-  An element with position: absolute; is positioned relative
-  to the nearest positioned ancestor. However; if an absolute
-  positioned element has no positioned ancestors, it uses the d
-  ocument body, and moves along with page scrolling.*/
   position: absolute;
   width: 65vw;
   top: 50vh;
@@ -117,8 +106,6 @@ navigation "layer" in front of other elements*/
   width: 65vw;
   top: 75vh;
   left: 50vw;
-  /*moves an element from its current position
-  (according to the parameters given for the X- & Y-axis).*/
   transform: translate(-50%, -50%);
 }
 /* Second part - My work */
@@ -154,7 +141,6 @@ navigation "layer" in front of other elements*/
 .text-overlay p{
   margin: 0;
 }
-/*Får inte hover att funkar - tappat en övergripande div?*/
 
 #firstdescent2-main-image{
   background-position: center;
@@ -342,6 +328,10 @@ navigation "layer" in front of other elements*/
   margin-top: 20vh;
   margin-bottom: 20vh;
 }
+#about-middle-wrapper-text h2 {
+  color: #000;
+}
+
 #about-middle-wrapper-text p {
   font-size: 13px;
   line-height: 25px;
@@ -423,6 +413,15 @@ navigation "layer" in front of other elements*/
   margin-top: 10vh;
   margin-bottom: 10vh;
 }
+
+#about-resume-wrapper-text h2 {
+  color: #212121;
+}
+
+.container-text{
+  margin: 0 0 25px 0;
+}
+
 /*portfolio*/
 #portfolio-grid-wrapper {
   display: grid;
@@ -432,13 +431,12 @@ navigation "layer" in front of other elements*/
   margin-top: 12vh;
   grid-auto-rows: 50vh;
 }
-/*a general wrapper for the project pages*/
+/*general wrapper for the project pages*/
 .project-wrapper{
   width: 100%;
   background-color: white;
   margin-top: 15vh;
 }
-/*booking have more images and need more space 400vh*/
 #project-booking-wrapper{
   width: 100%;
   background-color: white;
@@ -473,6 +471,7 @@ navigation "layer" in front of other elements*/
 .project-right h2{
   margin: 0;
   padding-top: 2vh;
+  color: #212121;
 }
 .project-right p{
   line-height: 20px;
@@ -503,9 +502,6 @@ navigation "layer" in front of other elements*/
 }
 .change_project a{
   font-size: 10px;
-/*  background-color: #efefef;
-  border-radius: 50px;
-  padding: 1vh 2vw;*/
 }
 .next_project{
   display: inline;
@@ -529,7 +525,7 @@ navigation "layer" in front of other elements*/
   color: #bdbdbd;
 }
 
-/* On screens that are 600px or less*/
+/* Screens that are 600px or less*/
 @media screen and (max-width: 600px) {
   h1 {
     font-size: 20px;

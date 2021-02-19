@@ -13,6 +13,7 @@ h2 {
   color: #fff;
   font-weight: bold;
 }
+
 h3 {
   font-size: 12px;
   color: #212121;
@@ -140,6 +141,10 @@ img {
 }
 .text-overlay p{
   margin: 0;
+}
+
+.text-overlay h2{
+  color: #fff;
 }
 
 #firstdescent2-main-image{

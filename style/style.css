@@ -419,6 +419,10 @@ img {
   margin-bottom: 10vh;
 }
 
+#about-resume-wrapper-text h2 {
+  color: #212121;
+}
+
 .container-text{
   margin: 0 0 25px 0;
 }

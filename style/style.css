@@ -419,10 +419,6 @@ img {
   margin-bottom: 10vh;
 }
 
-#about-resume-wrapper-text h2 {
-  color: #212121;
-}
-
 .container-text{
   margin: 0 0 25px 0;
 }
@@ -538,7 +534,6 @@ img {
   }
   h2 {
     font-size: 15px;
-    color: #212121;
     font-weight: bold;
   }
   a{
@@ -714,11 +709,6 @@ img {
 }
  }
  @media screen and (min-width: 600px)and (max-width: 900px) {
-   h2 {
-     font-size: 15px;
-     color: #212121;
-     font-weight: bold;
-   }
    /*since there is no hover on small screens*/
    .overlay {
      position: relative;

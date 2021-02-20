@@ -150,6 +150,12 @@ img {
   color: #fff;
 }
 
+#aloba-main-image{
+  background-position: center;
+  background-size: cover;
+  background-image: url("../bilder/aloba.jpg");
+}
+
 #firstdescent2-main-image{
   background-position: center;
   background-size: cover;
@@ -190,21 +196,6 @@ img {
   background-size: cover;
   background-image: url("../bilder/circus_cover.jpg");
 }
-#first-descent-main-image{
-  background-position: center;
-  background-size: cover;
-  background-image: url("../bilder/first-descent-cover.jpg");
-}
-#pepp-main-image{
-  background-position: center;
-  background-size: cover;
-  background-image: url("../bilder/pepp_spotify_2.jpg");
-}
-#temporary-main-image{
-  background-position: center;
-  background-size: cover;
-  background-image: url("../bilder/temporary_1.jpg");
-}
 .overlay{
  position: relative;
  height: 100%;
@@ -226,6 +217,11 @@ img {
 }
 .text-overlay p{
   color: white;
+}
+
+#aloba-main-image:hover .overlay {
+  background-color: #212121;
+  opacity: 0.9;
 }
 #firstdescent2-main-image:hover .overlay {
   background-color: #212121;
@@ -260,18 +256,6 @@ img {
   opacity: 0.9;
 }
 #circus-main-image:hover .overlay{
-  background-color: #212121;
-  opacity: 0.9;
-}
-#first-descent-main-image:hover .overlay{
-  background-color: #212121;
-  opacity: 0.9;
-}
-#pepp-main-image:hover .overlay{
-  background-color: #212121;
-  opacity: 0.9;
-}
-#temporary-main-image:hover .overlay{
   background-color: #212121;
   opacity: 0.9;
 }

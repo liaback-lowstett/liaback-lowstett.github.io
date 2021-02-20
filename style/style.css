@@ -1,6 +1,7 @@
 body {
   margin: 0;
   font-family: futura;
+  box-sizing: border-box;
 }
 h1 {
   font-size: 28 px;
@@ -52,36 +53,38 @@ img {
   padding-bottom: 3vh;
 }
 /*Top nav*/
-.topnav {
+.header {
+  display: flex;
+}
+
+.nav {
+  display: flex;
   position: fixed;
   top: 0;
-  height: 6vh;
-  width: 100vw;
-  padding: 4vh 0vw 0vh 0vw;
+  left: 0;
+  margin: auto;
+  width: 100%;
   z-index: 1;
 }
-.topnav a {
-  padding: 0vh 4vw 0vh 0vw;
-  text-align: center;
-  vertical-align: middle;
-  line-height: 4vh;
-  text-decoration: none;
-  float: right;
+
+.navigation-container-logo {
+  display: flex;
+  margin-right: auto;
+
 }
-.nav-logo {
-  position: absolute;
-  left: 6%;
-  transform: translateX(-50%);
-  font-weight: bold;
+
+.navigation-container {
+  display: flex;
+
 }
-#nav-about {
-  color: #bdbdbd;
+
+.nav-item {
+  margin: 25px;
 }
-.nav-portfolio{
-  color:#bdbdbd;
-}
-.topnav a:hover, .nav-logo:hover {
-  color: #bdbdbd;
+
+.nav-image {
+  width: 25px;
+
 }
 /*First part - introduction about me*/
 #main-wrapper {

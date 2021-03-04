@@ -80,6 +80,7 @@ img {
 
 .nav-item {
   margin: 25px;
+  font-weight: bold;
 }
 
 .nav-image {
@@ -271,8 +272,11 @@ img {
   position: absolute;
   text-align: center;
   left: 50%;
-  padding: 20vh 0vw;
+  padding: 10vh 0vw;
   transform: translate(-50%, -0%);
+}
+#bottom-wrapper-text p {
+  font-size: 18px;
 }
 #about-wrapper {
   width: 100%;
@@ -659,6 +663,11 @@ img {
      position: relative;
      background-repeat: no-repeat;
    }
+
+   #bottom-wrapper-text p {
+    font-size: 12px;
+  }
+  
    .footer {
     position: relative;
     display: table;
@@ -722,6 +731,7 @@ img {
   height: 35vh;
   text-align: center;
 }
+
 #bottom-wrapper-text {
   position: absolute;
   text-align: center;
@@ -729,6 +739,11 @@ img {
   padding: 10vh 0vw;
   transform: translate(-50%, -0%);
 }
+
+#bottom-wrapper-text p {
+  font-size: 14px;
+}
+
 /*Page: portfoilio*/
 .project-wrapper {
   width: 100%;

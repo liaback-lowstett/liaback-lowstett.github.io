@@ -106,6 +106,11 @@ img {
   left: 50vw;
   transform: translate(-50%, -50%);
 }
+
+#main-top-wrapper-text h1{
+  font-weight: 500;
+}
+
 #main-top-wrapper-subtext {
   position: absolute;
   width: 65vw;
@@ -261,7 +266,7 @@ img {
   opacity: 0.9;
 }
 
-/*Third part - which just say "lets work togethet"*/
+/*Skills"*/
 #bottom-wrapper{
   display: table;
   width: 100%;
@@ -275,8 +280,14 @@ img {
   padding: 10vh 0vw;
   transform: translate(-50%, -0%);
 }
+
+#bottom-wrapper-text h1 {
+  font-weight: 500;
+}
+
 #bottom-wrapper-text p {
   font-size: 18px;
+  line-height: 32px;
 }
 #about-wrapper {
   width: 100%;
@@ -664,6 +675,10 @@ img {
      background-repeat: no-repeat;
    }
 
+   #bottom-wrapper-text h1 {
+     font-weight: 500;
+   }
+
    #bottom-wrapper-text p {
     font-size: 12px;
   }
@@ -738,6 +753,10 @@ img {
   left: 50%;
   padding: 10vh 0vw;
   transform: translate(-50%, -0%);
+}
+
+#bottom-wrapper-text h1 {
+  font-weight: 500;
 }
 
 #bottom-wrapper-text p {

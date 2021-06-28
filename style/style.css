@@ -156,6 +156,12 @@ img {
   color: #fff;
 }
 
+#lument-main-image{
+  background-position: center;
+  background-size: cover;
+  background-image: url("../bilder/lab.jpg");
+}
+
 #aloba-main-image{
   background-position: center;
   background-size: cover;
@@ -223,6 +229,10 @@ img {
 }
 .text-overlay p{
   color: white;
+}
+#lument-main-image:hover .overlay {
+  background-color: #212121;
+  opacity: 0.9;
 }
 
 #aloba-main-image:hover .overlay {

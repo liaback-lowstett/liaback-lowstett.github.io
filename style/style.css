@@ -2,6 +2,7 @@ body {
   margin: 0;
   font-family: 'Jost', sans-serif;
   box-sizing: border-box;
+  background-color: #fff;
 }
 h1 {
   font-size: 28 px;
@@ -156,10 +157,28 @@ img {
   color: #fff;
 }
 
+#released-main-image{
+  background-position: center;
+  background-size: cover;
+  background-image: url("../bilder/released.jpg");
+}
+
 #lument-main-image{
   background-position: center;
   background-size: cover;
   background-image: url("../bilder/lab.jpg");
+}
+
+#firstdescent2-main-image{
+  background-position: center;
+  background-size: cover;
+  background-image: url("../bilder/fd_2_cover.jpg");
+}
+
+#cirkular-main-image{
+  background-position: center;
+  background-size: cover;
+  background-image: url("../bilder/cirkular.png");
 }
 
 #aloba-main-image{
@@ -168,11 +187,6 @@ img {
   background-image: url("../bilder/aloba.jpg");
 }
 
-#firstdescent2-main-image{
-  background-position: center;
-  background-size: cover;
-  background-image: url("../bilder/fd_2_cover.jpg");
-}
 #detectify-main-image{
   background-position: center;
   background-size: cover;
@@ -203,11 +217,6 @@ img {
   background-size: cover;
   background-image: url("../bilder/macro_main.jpg");
 }
-#circus-main-image{
-  background-position: center;
-  background-size: cover;
-  background-image: url("../bilder/circus_cover.jpg");
-}
 .overlay{
  position: relative;
  height: 100%;
@@ -230,19 +239,31 @@ img {
 .text-overlay p{
   color: white;
 }
+
+#released-main-image:hover .overlay {
+  background-color: #212121;
+  opacity: 0.9;
+}
+
 #lument-main-image:hover .overlay {
   background-color: #212121;
   opacity: 0.9;
 }
 
-#aloba-main-image:hover .overlay {
-  background-color: #212121;
-  opacity: 0.9;
-}
 #firstdescent2-main-image:hover .overlay {
   background-color: #212121;
   opacity: 0.9;
 }
+
+#cirkular-main-image:hover .overlay {
+  background-color: #212121;
+  opacity: 0.9;
+}
+#aloba-main-image:hover .overlay {
+  background-color: #212121;
+  opacity: 0.9;
+}
+
 #detectify-main-image:hover .overlay {
   background-color: #212121;
   opacity: 0.9;
@@ -305,7 +326,7 @@ img {
 }
  #about-top-wrapper-grid{
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  /* grid-template-columns: 1fr 1fr; */
   grid-gap: 0vw;
   padding: 0vw;
   margin-top: 12vh;
@@ -331,7 +352,7 @@ img {
 }
 #right-image{
   background-position: center;
-  background-image: url("../bilder/about_felicia_3.jpg");
+  background-image: url("../bilder/felicia_about_1.jpg");
 }
 #about-middle-wrapper {
   position: relative;
@@ -342,8 +363,8 @@ img {
 #about-middle-wrapper-text{
   width: 65%;
   margin: auto;
-  margin-top: 20vh;
-  margin-bottom: 20vh;
+  margin-top: 10vh;
+  margin-bottom: 5vh;
 }
 #about-middle-wrapper-text h2 {
   color: #000;

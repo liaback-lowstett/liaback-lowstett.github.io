@@ -21,10 +21,19 @@ h3 {
   color: #212121;
   font-weight: bold;
 }
+
+h4 {
+  font-size: 14px;
+  color: #212121;
+  font-weight: normal;
+  line-height: 27px;
+}
+
 p {
   font-size: 12px;
   color:#212121;
   margin: 0 0 2px 0;
+
 }
 a {
   font-size: 18px;
@@ -329,8 +338,8 @@ img {
   /* grid-template-columns: 1fr 1fr; */
   grid-gap: 0vw;
   padding: 0vw;
-  margin-top: 12vh;
-  grid-auto-rows: 88vh;
+  margin-top: 10vh;
+  grid-auto-rows: 90vh;
   background-color:#040404;
 }
 .about-top-wrapper-content{
@@ -408,19 +417,30 @@ img {
   grid-row-end: 5;
 }
 #about-resume-wrapper{
+  width: 65%;
+  margin: auto;
   position: relative;
   display: table;
-  width: 100%;
   text-align: left;
 }
 #about-resume-wrapper-text{
-  width: 65%;
-  margin: auto;
+  /* width: 60%;
+  margin: auto; */
   margin-top: 10vh;
   margin-bottom: 10vh;
 }
 
 #about-resume-wrapper-text h2 {
+  color: #212121;
+}
+
+#skills-resume-wrapper-text{
+  width: 45%;
+  margin-top: 10vh;
+  margin-bottom: 10vh;
+}
+
+#skills-resume-wrapper-text h2 {
   color: #212121;
 }
 
@@ -664,11 +684,16 @@ img {
      grid-gap: 0;
    }
    #about-resume-wrapper-text{
-     width: 80%;
-     margin: auto;
+     /* width: 80%;
+     margin: auto; */
      margin-top: 5vh;
      margin-bottom: 5vh;
    }
+
+   #skills-resume-wrapper-text{
+    width: 100%;
+  }
+
    /*portfolio page*/
    #portfolio-grid-wrapper {
     display: grid;
@@ -858,11 +883,16 @@ img {
     grid-gap: 0;
 }
 #about-resume-wrapper-text {
-    width: 65%;
-    margin: auto;
+    /* width: 65%;
+    margin: auto; */
     margin-top: 10vh;
     margin-bottom: 10vh;
 }
+
+#skills-resume-wrapper-text{
+  width: 100%;
+}
+
 /*footer*/
 .footer {
    position: relative;

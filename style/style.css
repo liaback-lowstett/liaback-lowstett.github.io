@@ -60,7 +60,8 @@ figure {
 }
 img {
   width: 100%;
-  padding-bottom: 3vh;
+  margin-bottom: 5vh;
+  border: 0.5px solid #959595;
 }
 /*Top nav*/
 .header {
@@ -172,6 +173,18 @@ img {
   background-image: url("../bilder/released.jpg");
 }
 
+#tibnor-main-image{
+  background-position: center;
+  background-size: cover;
+  background-image: url("../bilder/tibnor.jpeg");
+}
+
+#nibe-main-image{
+  background-position: center;
+  background-size: cover;
+  background-image: url("../bilder/nibe.jpeg");
+}
+
 #lument-main-image{
   background-position: center;
   background-size: cover;
@@ -250,6 +263,16 @@ img {
 }
 
 #released-main-image:hover .overlay {
+  background-color: #212121;
+  opacity: 0.9;
+}
+
+#tibnor-main-image:hover .overlay {
+  background-color: #212121;
+  opacity: 0.9;
+}
+
+#nibe-main-image:hover .overlay {
   background-color: #212121;
   opacity: 0.9;
 }
